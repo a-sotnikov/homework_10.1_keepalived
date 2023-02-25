@@ -2,7 +2,13 @@ all:
   children:
     vm-1:
       hosts:
-        158.160.30.143:
+        51.250.107.53:
+          keepalived_state: 'MASTER'
+          keepalived_priority: 120
+          keepalived_unicast: '192.168.100.25'
     vm-2:
       hosts:
-        158.160.27.21:
+        51.250.98.233:
+          keepalived_state: 'BACKUP'
+          keepalived_priority: 90
+          keepalived_unicast: '192.168.100.33'

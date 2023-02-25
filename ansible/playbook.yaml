@@ -1,7 +1,30 @@
 ---
-- name: Name
+- name: Insall keepalived
   hosts: all
   remote_user: admin
   become: true
   tags:
     - "Done"
+
+  tasks:
+
+    - name: Apt install keepalived
+      ansible.builtin.apt:
+        package:
+          - keepalived
+        update_cache: true
+
+    - name: Copy keepalived config
+      ansible.builtin.template:
+        src: "keepalived.j2"
+        dest: "/etc/keepalived/keepalived.conf"
+        owner: "admin"
+        mode: "644"
+      notify: Restart keepalived
+
+  handlers:
+    - name: Restart keepalived
+      ansible.builtin.systemd:
+        service: keepalived
+        state: restarted
+        enabled: true

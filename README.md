@@ -50,6 +50,26 @@
 >
 > *Пришлите скриншот рабочей конфигурации и состояния сервиса для каждого нода.*
 
+### master-нода
+
+Конфигурация:
+
+![Node1Conf](img/1_conf_node1.png)
+
+Статус:
+
+![Node1Status](img/1_status_node1.png)
+
+### backup-нода
+
+Конфигурация:
+
+![Node2Conf](img/1_conf_node2.png)
+
+Статус:
+
+![Node2Status](img/1_status_node2.png)
+
 ---
 
 ### Задание 2*
