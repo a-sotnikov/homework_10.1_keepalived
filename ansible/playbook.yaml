@@ -1,0 +1,7 @@
+---
+- name: Name
+  hosts: all
+  remote_user: admin
+  become: true
+  tags:
+    - "Done"
