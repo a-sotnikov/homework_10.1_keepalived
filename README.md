@@ -54,21 +54,29 @@
 
 Конфигурация:
 
-![Node1Conf](img/1_conf_node1.png)
+![Node1Conf](img/1_conf_master.png)
 
 Статус:
 
-![Node1Status](img/1_status_node1.png)
+![Node1Status](img/1_status_master.png)
+
+Интерфейсы:
+
+![Node1Iface](img/1_ifaces_master.png)
 
 ### backup-нода
 
 Конфигурация:
 
-![Node2Conf](img/1_conf_node2.png)
+![Node2Conf](img/1_conf_backup.png)
 
 Статус:
 
-![Node2Status](img/1_status_node2.png)
+![Node2Status](img/1_status_backup.png)
+
+Интерфейсы:
+
+![Node2Iface](img/1_ifaces_backup.png)
 
 ---
 
@@ -84,6 +92,6 @@
 >
 > *Пришлите скриншот до и после выключения интерфейса из Wireshark.*
 
-|| Ответ ||
+![TCPdump](img/2_tcpdump.png)
 
 ---
